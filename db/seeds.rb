@@ -20,28 +20,28 @@ Event.destroy_all
 
 
 
-e11 = Event.create :name => 'Oasis', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Hordern Pavillion', :ticket_url => Faker::Internet.url, :genre => 'Rock', :image => Faker::Internet.url
-e12 = Event.create :name => 'Cloud Control', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Oxford Art Factory', :ticket_url => Faker::Internet.url, :genre => 'Alternative', :image => Faker::Internet.url
-e13 = Event.create :name => 'Fleet Foxes', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Sydney Opera House', :ticket_url => Faker::Internet.url, :genre => 'Folk Rock', :image => Faker::Internet.url
-e14 = Event.create :name => 'El-P', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Rap', :image => Faker::Internet.url
-e15 = Event.create :name => 'Justin Bieber', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Qudos Bank Arena', :ticket_url => Faker::Internet.url, :genre => 'Pop', :image => Faker::Internet.url
-e16 = Event.create :name => 'Sonic Youth', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'The Metro Theatre', :ticket_url => Faker::Internet.url, :genre => 'Punk', :image => Faker::Internet.url
-e17 = Event.create :name => 'Blink-182', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'The Metro Theatre', :ticket_url => Faker::Internet.url, :genre => 'Pop-Punk', :image => Faker::Internet.url
-e18 = Event.create :name => 'Jeremiah', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Oxford Art Factory', :ticket_url => Faker::Internet.url, :genre => 'Rap', :image => Faker::Internet.url
-e19 = Event.create :name => 'Foo Fighters', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Rock', :image => Faker::Internet.url
-e20 = Event.create :name => 'Foals', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Progressive Rock', :image => Faker::Internet.url
-e21 = Event.create :name => 'Arca', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Sydney Opera House', :ticket_url => Faker::Internet.url, :genre => 'Electronic', :image => Faker::Internet.url
-e22 = Event.create :name => 'Kavinsky', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Hordern Pavillion', :ticket_url => Faker::Internet.url, :genre => 'Synth-wave', :image => Faker::Internet.url
-e23 = Event.create :name => 'Pearl Jam', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'The Metro Theatre', :ticket_url => Faker::Internet.url, :genre => 'Rock', :image => Faker::Internet.url
-e24 = Event.create :name => 'Big Boi', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'The Metro Theatre', :ticket_url => Faker::Internet.url, :genre => 'Rap', :image => Faker::Internet.url
-e25 = Event.create :name => 'Alt-J', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'The State Theatre', :ticket_url => Faker::Internet.url, :genre => 'Alternative', :image => Faker::Internet.url
-e26 = Event.create :name => 'Raincoats', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'The State Theatre', :ticket_url => Faker::Internet.url, :genre => 'Alternative', :image => Faker::Internet.url
-e27 = Event.create :name => 'The Decemberists', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Sydney Opera House', :ticket_url => Faker::Internet.url, :genre => 'Folk-Rock', :image => Faker::Internet.url
-e28 = Event.create :name => 'Mumford & Sons', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Qudos Bank Arena', :ticket_url => Faker::Internet.url, :genre => 'Folk-Rock', :image => Faker::Internet.url
-e29 = Event.create :name => 'Chvrches', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Hordern Pavillion', :ticket_url => Faker::Internet.url, :genre => 'Pop', :image => Faker::Internet.url
-e30 = Event.create :name => 'Slipknot', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Metal', :image => Faker::Internet.url
-e31 = Event.create :name => 'Animal Collective', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Qudos Bank Arena', :ticket_url => Faker::Internet.url, :genre => 'Electronic', :image => Faker::Internet.url
-e32 = Event.create :name => 'GWAR', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Metal', :image => Faker::Internet.url
+e11 = Event.create :name => 'Oasis', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Hordern Pavillion', :ticket_url => Faker::Internet.url, :genre => 'Rock', :image => Faker::Internet.url
+e12 = Event.create :name => 'Cloud Control', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Oxford Art Factory', :ticket_url => Faker::Internet.url, :genre => 'Alternative', :image => Faker::Internet.url
+e13 = Event.create :name => 'Fleet Foxes', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Sydney Opera House', :ticket_url => Faker::Internet.url, :genre => 'Folk Rock', :image => Faker::Internet.url
+e14 = Event.create :name => 'El-P', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Rap', :image => Faker::Internet.url
+e15 = Event.create :name => 'Justin Bieber', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Qudos Bank Arena', :ticket_url => Faker::Internet.url, :genre => 'Pop', :image => Faker::Internet.url
+e16 = Event.create :name => 'Sonic Youth', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'The Metro Theatre', :ticket_url => Faker::Internet.url, :genre => 'Punk', :image => Faker::Internet.url
+e17 = Event.create :name => 'Blink-182', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'The Metro Theatre', :ticket_url => Faker::Internet.url, :genre => 'Pop-Punk', :image => Faker::Internet.url
+e18 = Event.create :name => 'Jeremiah', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Oxford Art Factory', :ticket_url => Faker::Internet.url, :genre => 'Rap', :image => Faker::Internet.url
+e19 = Event.create :name => 'Foo Fighters', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Rock', :image => Faker::Internet.url
+e20 = Event.create :name => 'Foals', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Progressive Rock', :image => Faker::Internet.url
+e21 = Event.create :name => 'Arca', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Sydney Opera House', :ticket_url => Faker::Internet.url, :genre => 'Electronic', :image => Faker::Internet.url
+e22 = Event.create :name => 'Kavinsky', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Hordern Pavillion', :ticket_url => Faker::Internet.url, :genre => 'Synth-wave', :image => Faker::Internet.url
+e23 = Event.create :name => 'Pearl Jam', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'The Metro Theatre', :ticket_url => Faker::Internet.url, :genre => 'Rock', :image => Faker::Internet.url
+e24 = Event.create :name => 'Big Boi', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'The Metro Theatre', :ticket_url => Faker::Internet.url, :genre => 'Rap', :image => Faker::Internet.url
+e25 = Event.create :name => 'Alt-J', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'The State Theatre', :ticket_url => Faker::Internet.url, :genre => 'Alternative', :image => Faker::Internet.url
+e26 = Event.create :name => 'Raincoats', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'The State Theatre', :ticket_url => Faker::Internet.url, :genre => 'Alternative', :image => Faker::Internet.url
+e27 = Event.create :name => 'The Decemberists', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Sydney Opera House', :ticket_url => Faker::Internet.url, :genre => 'Folk-Rock', :image => Faker::Internet.url
+e28 = Event.create :name => 'Mumford & Sons', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Qudos Bank Arena', :ticket_url => Faker::Internet.url, :genre => 'Folk-Rock', :image => Faker::Internet.url
+e29 = Event.create :name => 'Chvrches', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Hordern Pavillion', :ticket_url => Faker::Internet.url, :genre => 'Pop', :image => Faker::Internet.url
+e30 = Event.create :name => 'Slipknot', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Metal', :image => Faker::Internet.url
+e31 = Event.create :name => 'Animal Collective', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Qudos Bank Arena', :ticket_url => Faker::Internet.url, :genre => 'Electronic', :image => Faker::Internet.url
+e32 = Event.create :name => 'GWAR', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Metal', :image => Faker::Internet.url
 
 Venue.destroy_all
 v1 = Venue.create :location => Faker::Address.latitude, :name => 'Hordern Pavillion', :url => Faker::Internet.url, :address => Faker::Address.street_address
