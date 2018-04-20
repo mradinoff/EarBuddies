@@ -1,3 +1,20 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  name            :string
+#  image           :string
+#  bio             :text
+#  hometown        :string
+#  interests       :text
+#  email           :string
+#  admin           :boolean
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  password_digest :string
+#
+
 class User < ApplicationRecord
   has_many :friendships
   has_many :friends, :through => :friendships
