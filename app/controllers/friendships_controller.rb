@@ -1,6 +1,6 @@
-class FriendshipsController < ApplicationController
+class FriendshipsController < ApiController
   before_action :set_friendship, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user, only: [:create]
   # GET /friendships
   # GET /friendships.json
   def index
@@ -24,7 +24,12 @@ class FriendshipsController < ApplicationController
   # POST /friendships
   # POST /friendships.json
   def create
-    @friendship = Friendship.new(friendship_params)
+
+    if current_user
+      user = User.find(current_user)
+      @friendship = user.friendships.build(:friend_id => params[:friend_id])
+    end
+
 
     respond_to do |format|
       if @friendship.save
