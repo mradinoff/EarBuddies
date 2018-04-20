@@ -40,5 +40,6 @@
   <%= @user.admin %>
 </p>
 
+<%= link_to "Add Friend", friendships_path(:friend_id => user), :method => :post %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
