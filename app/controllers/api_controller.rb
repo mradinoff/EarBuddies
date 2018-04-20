@@ -1,6 +1,9 @@
 class ApiController < ApplicationController
   include Knock::Authenticable
 
+
+  #before_action :set_default_format
+
   # before_action :set_default_format
 
 
