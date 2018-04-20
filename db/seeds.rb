@@ -16,6 +16,10 @@ Event.destroy_all
                 image: Faker::Internet.url,
                 )
 end
+
+
+
+
 e11 = Event.create :name => 'Oasis', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Hordern Pavillion', :ticket_url => Faker::Internet.url, :genre => 'Rock', :image => Faker::Internet.url
 e12 = Event.create :name => 'Cloud Control', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Oxford Art Factory', :ticket_url => Faker::Internet.url, :genre => 'Alternative', :image => Faker::Internet.url
 e13 = Event.create :name => 'Fleet Foxes', :description => 'DESCRIPTION', :date=> Faker::Time, :venue_id=> 'Sydney Opera House', :ticket_url => Faker::Internet.url, :genre => 'Folk Rock', :image => Faker::Internet.url
@@ -47,6 +51,18 @@ v4 = Venue.create :location => Faker::Address.latitude, :name => 'Enmore', :url 
 v5 = Venue.create :location => Faker::Address.latitude, :name => 'Qudos Bank Arena', :url => Faker::Internet.url, :address => Faker::Address.street_address
 v6 = Venue.create :location => Faker::Address.latitude, :name => 'The Metro Theatre', :url => Faker::Internet.url, :address => Faker::Address.street_address
 v7 = Venue.create :location => Faker::Address.latitude, :name => 'The State Theatre', :url => Faker::Internet.url, :address => Faker::Address.street_address
+
+
+User.destroy_all
+10.times do |index|
+  User.create!(name: Faker::Time,
+                image: Faker::Number,
+                bio: Faker::Internet.url,
+                hometown: Faker::Address.city,
+                interests: Faker::Job.title,
+                email: Faker::Internet.email,
+                )
+end
 
 #Venue and Events
 v1.events << e11 << e22 << e29
