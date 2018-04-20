@@ -9,13 +9,13 @@ require 'faker'
 
 Event.destroy_all
 
-10.times do |index|
-  Event.create!(date: Faker::Time,
-                venue_id: Faker::Number,
-                ticket_url: Faker::Internet.url,
-                image: Faker::Internet.url,
-                )
-end
+# 10.times do |index|
+#   Event.create!(date: Faker::Time,
+#                 venue_id: Faker::Number,
+#                 ticket_url: Faker::Internet.url,
+#                 image: Faker::Internet.url,
+#                 )
+# end
 
 
 
@@ -53,16 +53,16 @@ v6 = Venue.create :location => Faker::Address.latitude, :name => 'The Metro Thea
 v7 = Venue.create :location => Faker::Address.latitude, :name => 'The State Theatre', :url => Faker::Internet.url, :address => Faker::Address.street_address
 
 
-User.destroy_all
-10.times do |index|
-  User.create!(name: Faker::Time,
-                image: Faker::Number,
-                bio: Faker::Internet.url,
-                hometown: Faker::Address.city,
-                interests: Faker::Job.title,
-                email: Faker::Internet.email,
-                )
-end
+# User.destroy_all
+# 10.times do |index|
+#   User.create!(name: Faker::Time,
+#                 image: Faker::Number,
+#                 bio: Faker::Internet.url,
+#                 hometown: Faker::Address.city,
+#                 interests: Faker::Job.title,
+#                 email: Faker::Internet.email,
+#                 )
+# end
 
 #Venue and Events
 v1.events << e11 << e22 << e29
