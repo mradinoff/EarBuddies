@@ -4,7 +4,15 @@ class EventsController < ApiController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @events = if params[:genre]
+                Event.where(genre: params[:genre])
+              elsif params[:name]
+                Event.where(name: params[:name])
+              elsif params[:date]
+                Event.where(date: params[:date])
+              else
+                Event.all
+              end
   end
 
   # GET /events/1

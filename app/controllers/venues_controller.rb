@@ -4,7 +4,13 @@ class VenuesController < ApiController
   # GET /venues
   # GET /venues.json
   def index
-    @venues = Venue.all
+    @venues = if params[:near]
+                Venue.near(params[:near])
+              elsif params[:latlon]
+                Venue.near(params[:latlon], 10)
+              else
+                Venue.all
+              end
   end
 
   # GET /venues/1
