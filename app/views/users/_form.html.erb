@@ -47,6 +47,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :password_confirmation %>
+    <%= form.text_field :password_confirmation, id: :user_password_confirmation %>
+  </div>
+
+  <div class="field">
     <%= form.label :admin %>
     <%= form.check_box :admin, id: :user_admin %>
   </div>
