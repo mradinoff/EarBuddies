@@ -44,13 +44,13 @@ e31 = Event.create :name => 'Animal Collective', :description => Faker::Simpsons
 e32 = Event.create :name => 'GWAR', :description => Faker::Simpsons.quote , :date=> Faker::Time, :venue_id=> 'Enmore Theatre', :ticket_url => Faker::Internet.url, :genre => 'Metal', :image => Faker::Internet.url
 
 Venue.destroy_all
-v1 = Venue.create :location => Faker::Address.latitude, :name => 'Hordern Pavillion', :url => Faker::Internet.url, :address => Faker::Address.street_address
-v2 = Venue.create :location => Faker::Address.latitude, :name => 'Oxford Art Factory', :url => Faker::Internet.url, :address => Faker::Address.street_address
-v3 = Venue.create :location => Faker::Address.latitude, :name => 'Sydney Opera House', :url => Faker::Internet.url, :address => Faker::Address.street_address
-v4 = Venue.create :location => Faker::Address.latitude, :name => 'Enmore', :url => Faker::Internet.url, :address => Faker::Address.street_address
-v5 = Venue.create :location => Faker::Address.latitude, :name => 'Qudos Bank Arena', :url => Faker::Internet.url, :address => Faker::Address.street_address
-v6 = Venue.create :location => Faker::Address.latitude, :name => 'The Metro Theatre', :url => Faker::Internet.url, :address => Faker::Address.street_address
-v7 = Venue.create :location => Faker::Address.latitude, :name => 'The State Theatre', :url => Faker::Internet.url, :address => Faker::Address.street_address
+v1 = Venue.create :location => Faker::Address.latitude, :name => 'Hordern Pavillion', :url => Faker::Internet.url, :address => '1 Driver Ave, Moore Park NSW 2021'
+v2 = Venue.create :location => Faker::Address.latitude, :name => 'Oxford Art Factory', :url => Faker::Internet.url, :address => '38-46 Oxford St, Darlinghurst NSW 2010'
+v3 = Venue.create :location => Faker::Address.latitude, :name => 'Sydney Opera House', :url => Faker::Internet.url, :address => 'Bennelong Point, Sydney NSW 2000'
+v4 = Venue.create :location => Faker::Address.latitude, :name => 'Enmore Theatre', :url => Faker::Internet.url, :address => '118-132 Enmore Rd, Newtown NSW 2042'
+v5 = Venue.create :location => Faker::Address.latitude, :name => 'Qudos Bank Arena', :url => Faker::Internet.url, :address => 'Edwin Flack Ave & Olympic Blvd, Sydney Olympic Park NSW 2127'
+v6 = Venue.create :location => Faker::Address.latitude, :name => 'The Metro Theatre', :url => Faker::Internet.url, :address => '624 George St, Sydney NSW 2000'
+v7 = Venue.create :location => Faker::Address.latitude, :name => 'The State Theatre', :url => Faker::Internet.url, :address => '49 Market St, Sydney NSW 2000'
 
 
 # User.destroy_all
