@@ -42,8 +42,12 @@ class User < ApplicationRecord
     friendships.where(:accepted_at => nil)
   end
 
-  def matches
-    friendships.where.not(:accepted_at => nil)
+  def matched
+    friendships.where(:active => true)
+  end
+
+  def unmatched
+    friendships.where(:active => false)
   end
 
 end
