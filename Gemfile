@@ -33,6 +33,10 @@ gem 'knock'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'geocoder'
+gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
+gem "fog-aws"
+gem "figaro"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
