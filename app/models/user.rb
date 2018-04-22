@@ -37,4 +37,13 @@ class User < ApplicationRecord
       admin: admin
     }
   end
+
+  def pending
+    friendships.where(:accepted_at => nil)
+  end
+
+  def matches
+    friendships.where.not(:accepted_at => nil)
+  end
+
 end
