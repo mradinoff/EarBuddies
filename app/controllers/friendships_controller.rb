@@ -27,14 +27,8 @@ class FriendshipsController < ApiController
 
     if current_user
       user = User.find(current_user)
-      @friendship = user.friendships.build(:friend_id => params[:friend_id])
+      @friendship = user.friendships.build(friendship_params)
     end
-
-
-
-    @friendship = user.friendships.build(:friend_id => params[:friend_id])
-
-
 
     respond_to do |format|
       if @friendship.save
