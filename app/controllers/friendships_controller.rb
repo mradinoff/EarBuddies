@@ -4,7 +4,7 @@ class FriendshipsController < ApiController
   # GET /friendships
   # GET /friendships.json
   def index
-    @friendships = Friendship.all
+    @friendships = Friendship.matches
   end
 
   # GET /friendships/1
