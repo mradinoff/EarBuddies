@@ -27,14 +27,8 @@ class FriendshipsController < ApiController
 
     if current_user
       user = User.find(current_user)
-      @friendship = user.friendships.build(:friend_id => params[:friend_id])
+      @friendship = user.friendships.build(friendship_params)
     end
-
-
-
-    @friendship = user.friendships.build(:friend_id => params[:friend_id])
-
-
 
     respond_to do |format|
       if @friendship.save
@@ -79,6 +73,6 @@ class FriendshipsController < ApiController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def friendship_params
-      params.require(:friendship).permit(:user_id, :friend_id, :created_at, :updated_at)
+      params.require(:friendship).permit(:user_id, :friend_id, :created_at, :updated_at, :accepted_at, :active)
     end
 end
