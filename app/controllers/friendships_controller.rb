@@ -4,10 +4,7 @@ class FriendshipsController < ApiController
   # GET /friendships
   # GET /friendships.json
   def index
-    if current_user
-      user = User.find(current_user)
-      @friendships = user.matched
-    end
+    @friendships = Friendship.all
   end
 
   # GET /friendships/1
@@ -82,6 +79,6 @@ class FriendshipsController < ApiController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def friendship_params
-      params.require(:friendship).permit(:user_id, :friend_id, :created_at, :updated_at, :active)
+      params.require(:friendship).permit(:user_id, :friend_id, :created_at, :updated_at, :accepted_at, :active)
     end
 end

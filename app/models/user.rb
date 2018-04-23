@@ -39,6 +39,13 @@ class User < ApplicationRecord
     }
   end
 
-scope :matched, -> { where(active: true) }
-scope :pending, -> { where(active: false) }
-scope :unmatched, -> { where(active: nil) }
+
+    def matched
+      friendships.where(:active => true)
+    end
+
+    def pending
+      friendships.where(:active => false)
+    end
+
+  end
