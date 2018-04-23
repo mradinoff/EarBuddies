@@ -5,6 +5,15 @@ class UsersController < ApiController
   # GET /users.json
   def index
     @users = User.all
+
+    if params[:matched]
+      User.friendships.where(active: true)
+    elsif params[:unmatched]
+      User.friendships.where(active: false)
+    else
+      User.all
+    end
+
   end
 
   # GET /users/1

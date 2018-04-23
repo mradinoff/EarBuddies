@@ -39,16 +39,6 @@ class User < ApplicationRecord
     }
   end
 
-  def pending
-    friendships.where(:accepted_at => nil)
-  end
-
-  def matched
-    friendships.where(:active => true)
-  end
-
-  def unmatched
-    friendships.where(:active => false)
-  end
-
-end
+scope :matched, -> { where(active: true) }
+scope :pending, -> { where(active: false) }
+scope :unmatched, -> { where(active: nil) }
