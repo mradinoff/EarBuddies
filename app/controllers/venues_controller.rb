@@ -75,6 +75,6 @@ class VenuesController < ApiController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def venue_params
-      params.permit(:location, :name, :url, :address)
+      params.permit(:location, :name, :url, :address, :image)
     end
 end
