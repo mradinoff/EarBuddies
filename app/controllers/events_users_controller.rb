@@ -29,13 +29,25 @@ class EventsUsersController < ApplicationController
     respond_to do |format|
       if @events_user.save
         format.html { redirect_to @events_user, notice: 'Events user was successfully created.' }
-        format.json { render :show, status: :created, location: @events_user }
+        format.json { render :show, location: @events_user }
       else
         format.html { render :new }
         format.json { render json: @events_user.errors, status: :unprocessable_entity }
       end
     end
   end
+
+  #   respond_to do |format|
+  #     if @events_user.save
+  #       format.html { redirect_to @events_user, notice: 'Events user was successfully created.' }
+  #       format.json { render :show, status: :created, location: @events_user }
+  #     else
+  #       format.html { render :new }
+  #       format.json { render json: @events_user.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end delete this
+
 
   # PATCH/PUT /events_users/1
   # PATCH/PUT /events_users/1.json
