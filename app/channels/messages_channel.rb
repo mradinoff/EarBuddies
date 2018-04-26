@@ -8,11 +8,13 @@ class MessagesChannel < ApplicationCable::Channel
   end
 
   def create(data)
-    event = Event.find(data['event_id'])
-    event.messages.create(
+    user = User.find(data['user_id'])
+    user.messages.create(
       content: data['content'],
       user_id: data['user_id'],
-      event_id: data['event_id']
+      event_id: data['event_id'],
+      user_name: data['user_name'],
+      event_name: data['event_name'],
     )
   end
 end

@@ -8,6 +8,8 @@ class MessageCreationEventBroadcastJob < ApplicationJob
                  user_id: chat_message['user_id'],
                  content: chat_message['content'],
                  event_id: chat_message['event_id'],
+                 user_name: chat_message['user_name'],
+                 event_name: chat_message['event_name'],
                  created_at: chat_message['created_at'].strftime('%H:%M')
                )
 
