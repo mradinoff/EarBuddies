@@ -4,7 +4,11 @@ class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
   def index
-    @messages = Message.all
+    @messages = if params[:event_id]
+                  Message.where(event_id: params[:event_id])
+                else
+                  Message.all
+                end
   end
 
   # GET /messages/1
