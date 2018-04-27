@@ -22,6 +22,7 @@ class User < ApplicationRecord
   has_many :messages
 
   validates :email, presence: true
+  validates_format_of :email, :with => /@/, message: "Please enter a valid email address"
   validates :password, confirmation: true
 
 
@@ -40,7 +41,8 @@ class User < ApplicationRecord
     {
       sub: id,
       email: email,
-      admin: admin
+      admin: admin,
+      name: name
     }
   end
 
